@@ -1,0 +1,1 @@
+Link UI Design: https://www.figma.com/file/mCxQJxUkpWn8hUEIB0ef5F/Schedy-(Community)?node-id=29%3A40
