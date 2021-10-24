@@ -1,0 +1,17 @@
+@mixin respond-to($breakpoint, $direction) {
+  @if map-has-key($breakpoints,  $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @if $direction == up {
+          //Build media query
+          @media (min-width: $breakpoint-value) {
+              @content;
+          }
+      }
+      @else if $direction == down {
+          //Build media query
+          @media (max-width: $breakpoint-value) {
+              @content;
+          }
+      }
+  }
+}
